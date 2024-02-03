@@ -1,10 +1,14 @@
 import React from 'react'
-import useEffectHook from './useEffectHook'
+import useMemoHook from './useMemoHook'
+import useRefHook from './useRefHook'
+import ContextHooks from './ContextHooks'
 
 const App = () => {
   return (
     <div>
-      {useEffectHook()}
+      {/* add whichever hook */}
+      {/* context hooks have a child component, so render it as a comopent not a function */}
+      <ContextHooks/>
     </div>
   )
 }
